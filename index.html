@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FudHub</title>
+
+    <!-- Futuristic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            /* Add background image */
+            background: url('Images/image.png') no-repeat center center fixed;
+            background-size: cover; /* Ensures the image covers the entire background */
+            color: #131212;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stacking direction */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            margin-bottom: 1em;
+            letter-spacing: 0.1em;
+            color: #0d0e0d;
+        }
+
+
+        .futuristic-image:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 30px rgb(18, 19, 19));
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .card {
+            width: 150px;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(22, 22, 22, 0.5);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .card img:hover {
+            transform: scale(1.1);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h4 {
+            color: black;
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .card {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Inserted Futuristic Image -->
+        <img  src="/Images/logop-jWaTfJPfg-transformed-removebg-preview.png" alt="Futuristic Logo">
+
+        <h1>Choose Your Path</h1>
+
+        <div class="card-container">
+            <!-- Image 1 - Redirect to Farmer Login Page -->
+            <div class="card">
+                <a href="auth/FarmerLogin.php">
+                    <img src="/Images/seller.png" alt="Seller Login">
+                </a>
+                <h4>Seller</h4>
+            </div>
+
+            <!-- Image 2 - Redirect to Buyer Login Page -->
+            <div class="card">
+                <a href="/auth/BuyerLogin.php">
+                    <img src="/Images/rating_3201521.png" alt="Buyer Login">
+                </a>
+                <h4>Buyer</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(to bottom right, orange, white); /* Creates a gradient from orange to white */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the gradient covers the entire background */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    text-align: center;
+    color: black; /* Changes text color to black */
+}
+
+.futuristic-image:hover {
+    transform: scale(1.1); /* Image slightly grows on hover */
+    filter: drop-shadow(0 0 30px rgba(0, 255, 255, 1)); /* Stronger glow effect on hover */
+}
+
+
+h1, h2, p, a { /* Apply the 3D effect to all major text elements */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a shadow effect for a 3D look */
+    font-weight: bold; /* Optional: Make text bold for more emphasis */
+}
+
+
+#welcome {
+    font-size: 500px; /* Adjusted size for better balance */
+    font-family: 'Cormorant Infant', serif;
+    font-weight: bold;
+    margin-top: 8%;
+    opacity: 0.9; /* Slightly increased opacity */
+    text-shadow: 2px 2px black;
+}
+
+#are {
+    font-family: 'Cormorant Infant', serif;
+    font-weight: bold;
+    opacity: 1; /* Full opacity for emphasis */
+    padding-top: 18%;	
+    font-size: 70px; /* Adjusted size */
+    text-shadow: 2px 2px black;
+}
+
+#linebreak {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#farmerButton, #buyerButton { /* Combined button styles */
+    display: inline-block;
+    align-items: center;
+    background-color: black;
+    font-size: 250px; /* Adjusted size */
+    border-style: solid;
+    border-width: 4px; /* Slightly reduced width */
+    border-radius: 80%;
+    border-color: black;
+    padding: 40px 50px; /* Added padding for better clickability */
+    margin: 10%; /* Added margin for spacing */
+    cursor: pointer; /* Changed cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+#link {
+    color:white;
+    text-decoration: none;
+}
+
+#link:hover {
+    color: rgb(155, 248, 4);
+    border-radius: 20%;
+    border-style: outset;
+    border-color: rgb(155, 248, 4);
+    font-weight: bolder;
+    border-width: 4px;
+    background-color: rgba(155, 248, 4, 0.1); /* Added background on hover */
+}
